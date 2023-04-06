@@ -9,10 +9,10 @@ function getTime() {
   let m = d.getMinutes();
   let s = d.getSeconds();
 
-  const am = h > 12 ? "PM" : "AM";
+  const am = h >= 12 ? "PM" : "AM";
 
   // convert 24 hr to 12hr
-  if (h >= 12) {
+  if (h > 12) {
     h = h - 12;
   }
   //add 0 before single digit
